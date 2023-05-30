@@ -1,0 +1,77 @@
+/* Add your CSS styles here */
+@media (min-width: 1025px) {
+}
+body {
+    font-family: Arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
+    margin: 0;
+    padding: 0;
+  width: 100%;
+  height: 100vh;
+margin: 0 ;
+background-color: #c9d9eb;
+color: #0f0f0f;
+font-size: 16px;
+}
+
+h1, h2, p {
+margin: 1em auto;
+text-align: center;
+}
+
+main{
+background-color: #f9fcfa;
+color: #0c0c0c;
+
+}
+.card {
+margin: 0 auto;
+height: 100%;
+
+}
+
+.section {
+  background-color: #f2f2f2;   /* Sets the background color */
+  padding: 20px;               /* Adds padding around the section */
+  margin-bottom: 20px;         /* Adds spacing between sections */
+  border-radius: 5px;          /* Rounds the corners of the section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Adds a box shadow */
+}
+
+.section h2 {
+  color: #333;                 /* Sets the color of the section title */
+}
+
+.section p {
+  color: #666;                 /* Sets the color of the section content */
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+overflow-x: hidden;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+padding-left: 250px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+#content {
+width: 100%;
+position: relative;
+margin-right: 0;
+}
+
+
+
+
