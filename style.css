@@ -1,149 +1,207 @@
-/* Add your CSS styles here */
-
-
-
-div#carousel { 
-  perspective: 1200px; 
-  background: #286ebe; 
-  padding-top: 10%; 
-  font-size:0; 
-  margin-bottom: 3rem; 
-  overflow: hidden; 
-}
-figure#spinner { 
-  transform-style: preserve-3d; 
-  height: 300px; 
-  transform-origin: 50% 50% -500px; 
-  transition: 1s; 
-} 
-figure#spinner img { 
-  width: 40%; max-width: 425px; 
-  position: absolute; left: 30%;
-  transform-origin: 50% 50% -500px;
-  outline:1px solid transparent; 
-}
-figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
-}
-figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
-figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
-figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
-figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
-figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
-div#carousel ~ span { 
-  color: #fff; 
-  margin: 5%; 
-  display: inline-block; 
-  text-decoration: none; 
-  font-size: 2rem; 
-  transition: 0.6s color; 
-  position: relative; 
-  margin-top: -6rem; 
-  border-bottom: none; 
-  line-height: 0; }
-div#carousel ~ span:hover { color: #888; cursor: pointer; }
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1025px) {
-}
-body {
-    font-family: Arial, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
-    margin: 0;
-    padding: 0;
-  width: 100%;
-  height: 100vh;
-margin: 0 ;
-background-color: #4a8edb;
-color: #0f0f0f;
-font-size: 16px;
-}
-img{
-  height: fit-content;
-
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
 }
 
-h1, h2{
-margin: 1em auto;
-text-align: center;
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
 }
 
-main{
-background-color: #1525b8;
-color: #0c0c0c;
-
-}
-.card {
-margin: 0 auto;
-height: 90%;
-
-}
-.card-img-top{
- background: rgba(245, 216, 216, 0.1);
-    height: fit-content;
-    width: fit-content;
-    padding-bottom: 40%;
+ul{
+  margin:0;
+  padding:0;
 }
 
-#partners-profile {
-  background-color: #c52626;   /* Sets the background color */
-  padding: 20px;               /* Adds padding around the section */
-  margin-bottom: 20px;         /* Adds spacing between sections */
-  border-radius: 5px;          /* Rounds the corners of the section */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Adds a box shadow */
-}
-#company-profile {
-  background-color: #80afe4;   /* Sets the background color */
-  padding: 20px;               /* Adds padding around the section */
-  margin-bottom: 20px;         /* Adds spacing between sections */
-  border-radius: 5px;          /* Rounds the corners of the section */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Adds a box shadow */
+.button_1{
+  height:38px;
+  background:#421de8;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
 }
 
-
- p {
-  color: #1a1616;                 /* Sets the color of the section content */
-  margin: 4em auto;
-text-align: center;
-position: relative;
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
-
-
-
-/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-
-body {
-overflow-x: hidden;
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#421de8 3px solid;
 }
 
-/* Toggle Styles */
-
-/*#viewport {
-padding-left: 250px;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-transition: all 0.5s ease;
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
 }
 
-#content {
-width: 100%;
-position: relative;
-margin-right: 0;
-}*/
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
 
+header #branding{
+  float:left;
+}
 
+header #branding h1{
+  margin:0;
+}
 
+header nav{
+  float:right;
+  margin-top:10px;
+}
 
+header .highlight, header .current a{
+  color:#421de8;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#421de8;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
